@@ -25,11 +25,14 @@ private String organization_name;
 	@NotNull(message="enter the organization_owner_name")
 private String organization_owner_name;
 	
+	@NotNull(message="enter the location")
+	private String location;
+	
 	@NotNull(message="enter the organization_number")
-private int organization_number;
+private Long organization_number;
 	
 	@NotNull(message="enter the organization_email_id")
-private String organization_email_id;
+private String emailId;
 	
 	@NotNull(message="enter the organization_password")
 private String organization_password;

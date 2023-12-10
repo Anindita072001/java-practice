@@ -22,16 +22,19 @@ private int donor_id;
 private String donor_name;
 	
 	@NotNull(message="enter the number")
-private int donor_number;
+private Long donor_number;
 	
-	@NotNull(message="enter the email_id")
-private String donor_email_id;
+	@NotNull(message="enter the emailId")
+
+private String emailId;
 	
 	@NotNull(message="enter the location")
 private String donor_location;
 	
 	@NotNull(message="enter the password")
 private String donor_password;
+	
+	
 
 
 }

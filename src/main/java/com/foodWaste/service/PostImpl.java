@@ -48,6 +48,12 @@ public class PostImpl implements PostService{
 			 if (Objects.nonNull(post.getFood_type()) && !"".equalsIgnoreCase(post.getFood_type())) {
 				 originalpost.setFood_type(post.getFood_type());
 	            }
+			 if (Objects.nonNull(post.getDescribtion()) && !"".equalsIgnoreCase(post.getDescribtion())) {
+				 originalpost.setDescribtion(post.getDescribtion());
+	            }
+			 if (Objects.nonNull(post.getLocation()) && !"".equalsIgnoreCase(post.getLocation())) {
+				 originalpost.setLocation(post.getLocation());
+	            }
 			 
 			 if (Objects.nonNull(post.getPost_date()) ) {
 				 originalpost.setPost_date(post.getPost_date());
@@ -71,6 +77,11 @@ public class PostImpl implements PostService{
 		}
 		return "No such user in the database";
 	}
+	
+	
+	public void deletePostsByDonorId(int donorId) {
+        pr.deleteByDonorId(donorId);
+    }
 		
 	
 	

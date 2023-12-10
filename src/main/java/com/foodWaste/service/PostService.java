@@ -11,4 +11,5 @@ public interface PostService {
 	Post_Entity getpostById(int post_id); // select by id
 	Post_Entity upadtepostById(int Post_id,Post_Entity post); // Update
 	String deletepostById(int post_id);
+	void deletePostsByDonorId(int donorId);
 }

@@ -7,5 +7,5 @@ import com.foodWaste.entity.Donor_Entity;
 
 @Repository
 public interface DonerRepository extends JpaRepository<Donor_Entity, Integer> {
-
+	Donor_Entity findByEmailId(String email);
 }
